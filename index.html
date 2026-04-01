@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Raj — AI Student & Web Developer</title>
+  <meta name="description"
+    content="Aditya Raj — AI student and aspiring developer based in Virar, Maharashtra, building intelligent solutions & responsive web applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== SCROLL PROGRESS BAR ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== BACKGROUND FLOATING SHAPES ===== -->
+  <div class="bg-shapes" aria-hidden="true">
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+    <div class="bg-shape shape-4"></div>
+    <div class="bg-shape shape-5"></div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        Aditya Raj
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home"><span class="hash">#</span>home</a></li>
+        <li><a href="#projects"><span class="hash">#</span>projects</a></li>
+        <li><a href="#services"><span class="hash">#</span>services</a></li>
+        <li><a href="#skills"><span class="hash">#</span>skills</a></li>
+        <li><a href="#about"><span class="hash">#</span>about-me</a></li>
+        <li><a href="#contacts"><span class="hash">#</span>contact-me</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== SIDEBAR ===== -->
+  <div class="sidebar">
+    <a href="https://github.com/adityayadav08102005-netizen" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.instagram.com/_aditya__yadav__?igsh=dmg0eGprenYyM2Mx" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/aditya-raj-724abb28a/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+
+  <!-- ===== HOME SECTION ===== -->
+  <section id="home">
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="container">
+      <div class="home-content">
+
+        <!-- LEFT: text -->
+        <div class="home-text">
+          <span class="hero-tag">// Welcome to my world</span>
+          <h1>Hi, I'm an <span class="gradient-text">AI student</span> and<br>
+            <span class="gradient-text">web developer</span>
+          </h1>
+          <p>AI student at Ajeenkya DY Patil University. I build web applications with HTML, CSS, JavaScript and explore AI/ML, data structures &amp; algorithms.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contacts" class="btn-outline">Contact Me</a>
+            <button class="btn-outline" id="heroResumeBtn" onclick="openResumeModal()"><i class="fa-solid fa-file-lines"></i> View Resume</button>
+          </div>
+        </div>
+
+        <!-- RIGHT: photo container with all deco inside -->
+        <div class="home-right">
+          <div class="deco-squares">
+            <div class="sq sq1"></div>
+            <div class="sq sq2"></div>
+            <div class="sq sq3"></div>
+          </div>
+
+          <div class="home-img-wrap">
+            <img src="./assets/aditya.jpeg" alt="Aditya" class="hero-photo" />
+            <div class="hero-photo-glow"></div>
+            <div class="status-badge">
+              <span class="badge-dot"></span>
+              Currently working on <strong>AI Projects</strong>
+            </div>
+          </div>
+
+          <div class="dot-grid-home"></div>
+          <div class="deco-rect-right"></div>
+        </div>
+      </div>
+
+      <!-- Quote block -->
+      <div class="quote-block">
+        <div class="quote-open">"</div>
+        <p>Control can sometimes be an illusion.<br>
+          But sometimes you need illusion to gain control.</p>
+        <div class="quote-close-wrap">
+          <div class="quote-close">"</div>
+          <span class="quote-author">- Mr. Who</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="dot-grid-projects"></div>
+      <div class="deco-rect-projects"></div>
+
+      <div class="section-header">
+        <h2 class="section-title"><span class="hash">#</span>projects</h2>
+        <a href="#" class="view-all">View all ——→</a>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card skeleton-card" data-skeleton="true">
+          <div class="project-preview" data-live-url="https://food-link-xa1c.onrender.com/">
+            <div class="project-preview-placeholder">
+              <i class="fa-solid fa-bowl-food"></i>
+              <span>Food Donation</span>
+            </div>
+            <div class="project-live-preview">
+              <iframe src="about:blank" data-src="https://food-link-xa1c.onrender.com/" loading="lazy" sandbox="allow-scripts allow-same-origin" title="Food_Link Preview"></iframe>
+              <div class="preview-overlay">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                <span>Live Preview</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span>Node.js</span><span>Express</span><span>Oracle 21c</span><span>JavaScript</span><span>GPS API</span><span>Google Maps</span>
+          </div>
+          <div class="project-info">
+            <h3>Food_Link</h3>
+            <p>Real-time, location-based platform connecting food donors with nearby receivers. Smart matching engine with GPS, notifications &amp; impact analytics.</p>
+            <div class="project-links">
+              <a href="https://food-link-xa1c.onrender.com/" target="_blank" class="btn-outline-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              <a href="#" class="btn-outline-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card skeleton-card" data-skeleton="true">
+          <div class="project-preview" data-live-url="">
+            <div class="project-preview-placeholder">
+              <i class="fa-solid fa-people-group"></i>
+              <span>Social Network</span>
+            </div>
+            <div class="project-cli-preview">
+              <div class="cli-window">
+                <div class="cli-header">
+                  <span class="cli-dot red"></span>
+                  <span class="cli-dot yellow"></span>
+                  <span class="cli-dot green"></span>
+                  <span class="cli-title">terminal — java</span>
+                </div>
+                <div class="cli-body">
+                  <p><span class="cli-prompt">$</span> java JaanPechaan</p>
+                  <p class="cli-output">Loading social graph...</p>
+                  <p class="cli-output">✓ 150 users loaded</p>
+                  <p class="cli-output">✓ Analyzing mutual friends...</p>
+                  <p class="cli-output highlight">→ Recommended: Rahul (8 mutual)</p>
+                  <p class="cli-cursor">_</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span>Java</span><span>HashMap</span><span>HashSet</span><span>Graph Theory</span><span>CLI</span>
+          </div>
+          <div class="project-info">
+            <h3>Jaan Pechaan</h3>
+            <p>Intelligent friend recommendation system using mutual friend analysis &amp; graph algorithms. CLI-based social network with smart suggestions.</p>
+            <div class="project-links">
+              <a href="#" class="btn-outline-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card skeleton-card" data-skeleton="true">
+          <div class="project-preview" data-live-url="https://nextgen-ride.onrender.com/">
+            <div class="project-preview-placeholder">
+              <i class="fa-solid fa-bus"></i>
+              <span>Smart Transit</span>
+            </div>
+            <div class="project-live-preview">
+              <iframe src="about:blank" data-src="https://nextgen-ride.onrender.com/" loading="lazy" sandbox="allow-scripts allow-same-origin" title="NextGen_Ride Preview"></iframe>
+              <div class="preview-overlay">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                <span>Live Preview</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span>Node.js</span><span>Express</span><span>Oracle 21c</span><span>NFC</span><span>GPS</span><span>UPI</span>
+          </div>
+          <div class="project-info">
+            <h3>NextGen_Ride</h3>
+            <p>NFC-powered smart student fare system with GPS-based distance pricing, digital wallets &amp; seamless UPI payments for public transport.</p>
+            <div class="project-links">
+              <a href="https://nextgen-ride.onrender.com/" target="_blank" class="btn-outline-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              <a href="#" class="btn-outline-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card skeleton-card" data-skeleton="true">
+          <div class="project-preview" data-live-url="">
+            <div class="project-preview-placeholder">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>IoT Automation</span>
+            </div>
+            <div class="project-cli-preview">
+              <div class="cli-window">
+                <div class="cli-header">
+                  <span class="cli-dot red"></span>
+                  <span class="cli-dot yellow"></span>
+                  <span class="cli-dot green"></span>
+                  <span class="cli-title">Arduino IDE</span>
+                </div>
+                <div class="cli-body">
+                  <p><span class="cli-prompt">//</span> PIR Sensor Check</p>
+                  <p class="cli-output">✓ Motion Detected!</p>
+                  <p class="cli-output">✓ Relay → ON</p>
+                  <p class="cli-output">✓ Light activated</p>
+                  <p class="cli-output highlight">→ Timer: 30s countdown</p>
+                  <p class="cli-cursor">_</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span>Arduino</span><span>Embedded C</span><span>PIR Sensor</span><span>Relay Module</span><span>IoT</span>
+          </div>
+          <div class="project-info">
+            <h3>Auto Room Light Controller</h3>
+            <p>Arduino-based automatic lighting system using PIR motion sensors. Detects human presence &amp; controls lights with delay timer for energy efficiency.</p>
+            <div class="project-links">
+              <a href="https://github.com/adityayadav08102005-netizen" target="_blank" class="btn-outline-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card skeleton-card" data-skeleton="true">
+          <div class="project-preview" data-live-url="">
+            <div class="project-preview-placeholder">
+              <i class="fa-solid fa-square-parking"></i>
+              <span>Smart Parking</span>
+            </div>
+            <div class="project-cli-preview">
+              <div class="cli-window">
+                <div class="cli-header">
+                  <span class="cli-dot red"></span>
+                  <span class="cli-dot yellow"></span>
+                  <span class="cli-dot green"></span>
+                  <span class="cli-title">INGENIUM — IoT+AI</span>
+                </div>
+                <div class="cli-body">
+                  <p><span class="cli-prompt">$</span> python parking_ai.py</p>
+                  <p class="cli-output">✓ YOLOv8 model loaded</p>
+                  <p class="cli-output">✓ IoT sensors active</p>
+                  <p class="cli-output">✓ 12/20 slots available</p>
+                  <p class="cli-output highlight">→ Navigating to Slot B-7</p>
+                  <p class="cli-cursor">_</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span>Python</span><span>YOLOv8</span><span>ESP32</span><span>AWS IoT</span><span>Flutter</span><span>MQTT</span>
+          </div>
+          <div class="project-info">
+            <h3>Smart Parking System</h3>
+            <p>IoT + AI-based smart parking with real-time detection using YOLOv8 computer vision, predictive reservations, GPS navigation &amp; dynamic pricing.</p>
+            <div class="project-links">
+              <a href="https://github.com/adityayadav08102005-netizen" target="_blank" class="btn-outline-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span>services</h2>
+      <p class="section-subtitle">What I can do for you</p>
+
+      <div class="services-grid">
+        <div class="service-card glass-card">
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>Building responsive, pixel-perfect user interfaces with HTML, CSS, and JavaScript for seamless user experiences across all devices.</p>
+          <div class="service-tools">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Programming & DSA</h3>
+          <p>Writing efficient code in C, C++, Java, and Python. Strong foundation in data structures, algorithms, and object-oriented programming.</p>
+          <div class="service-tools">
+            <span>C</span>
+            <span>C++</span>
+            <span>Java</span>
+            <span>Python</span>
+          </div>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>Ensuring pixel-perfect experiences across all devices — from mobile phones to desktop screens with modern CSS techniques.</p>
+          <div class="service-tools">
+            <span>CSS Grid</span>
+            <span>Flexbox</span>
+            <span>Media Queries</span>
+          </div>
+        </div>
+
+        <div class="service-card glass-card">
+          <div class="service-number">04</div>
+          <div class="service-icon">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h3>AI & Machine Learning</h3>
+          <p>Exploring artificial intelligence and machine learning concepts. Building intelligent systems and data-driven solutions.</p>
+          <div class="service-tools">
+            <span>Python</span>
+            <span>ML Basics</span>
+            <span>AI Concepts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS / HOW I WORK SECTION ===== -->
+  <section id="process">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span>my-process</h2>
+      <p class="section-subtitle">How I bring ideas to life</p>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-line"></div>
+          <div class="process-icon-wrap">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3>Discovery</h3>
+          <p>Understanding your goals, audience, and brand to craft the perfect strategy.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="process-line"></div>
+          <div class="process-icon-wrap">
+            <i class="fa-solid fa-pen-ruler"></i>
+          </div>
+          <h3>Design</h3>
+          <p>Creating wireframes and high-fidelity mockups that tell your story visually.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="process-line"></div>
+          <div class="process-icon-wrap">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3>Develop</h3>
+          <p>Turning designs into clean, responsive, and performant code.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="process-line"></div>
+          <div class="process-icon-wrap">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <h3>Launch</h3>
+          <p>Testing, optimizing, and deploying your project to the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span>skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+          <span>C</span>
+          <div class="skill-level">
+            <div class="skill-fill" style="width:85%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+          <span>C++</span>
+          <div class="skill-level">
+            <div class="skill-fill" style="width:80%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          <span>Java</span>
+          <div class="skill-level">
+            <div class="skill-fill" style="width:78%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <span>Python</span>
+          <div class="skill-level">
+            <div class="skill-fill" style="width:75%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+          <span>HTML5</span>
+          <div class="skill-level">
+            <div class="skill-fill" style="width:90%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+          <span>CSS3</span>
+          <div class="skill-level">
+            <div class="skill-fill" style="width:88%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript" />
+          <span>JavaScript</span>
+          <div class="skill-level">
+            <div class="skill-fill" style="width:82%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+          <span>MySQL</span>
+          <div class="skill-level">
+            <div class="skill-fill" style="width:70%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+          <span>MongoDB</span>
+          <div class="skill-level">
+            <div class="skill-fill" style="width:65%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+          <span>Git</span>
+          <div class="skill-level">
+            <div class="skill-fill" style="width:80%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION & SCHOOLING TIMELINE ===== -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span>education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">Present</span>
+            <h3>B.Tech in Artificial Intelligence</h3>
+            <p>Pursuing B.Tech in Artificial Intelligence at Ajeenkya DY Patil University. Exploring machine learning, intelligent systems, and building AI-driven applications.</p>
+            <div class="timeline-tags">
+              <span>AI</span>
+              <span>Machine Learning</span>
+              <span>Python</span>
+              <span>DSA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">Completed</span>
+            <h3>Diploma in Engineering</h3>
+            <p>Completed Diploma in Engineering from ISBM University. Built a solid foundation in core engineering principles, programming, and technical problem-solving.</p>
+            <div class="timeline-tags">
+              <span>Engineering</span>
+              <span>Programming</span>
+              <span>Technical Skills</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">Completed</span>
+            <h3>Class 12 — BSEB (Bihar Board)</h3>
+            <p>Completed 12th from Bihar School Examination Board. Focused on Science stream with strong academic performance.</p>
+            <div class="timeline-tags">
+              <span>Science</span>
+              <span>Bihar Board</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">Completed</span>
+            <h3>Class 10 — CBSE (Shiv Jyoti)</h3>
+            <p>Completed 10th from Shiv Jyoti School under CBSE board. Awarded ₹75,000 scholarship for academic excellence.</p>
+            <div class="timeline-tags">
+              <span>CBSE</span>
+              <span>Scholarship</span>
+              <span>₹75,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="dot-grid-about"></div>
+      <div class="deco-rect-about"></div>
+      <h2 class="section-title"><span class="hash">#</span>about-me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-greeting">Hello, i'm <span class="gradient-text">Aditya!</span></p>
+          <p>I'm an Artificial Intelligence student based in Virar, Maharashtra. I'm passionate about building real-world AI-driven solutions and responsive web applications.</p>
+          <p>Currently pursuing B.Tech in AI at Ajeenkya DY Patil University. I have a strong foundation in programming (C, C++, Java, Python), data structures, and web development. I'm always eager to learn new technologies and take on challenging projects.</p>
+          <div class="about-cta-group">
+            <button class="btn-primary" onclick="openResumeModal()"><i class="fa-solid fa-eye"></i> View Resume</button>
+            <a href="./assets/Aditya_Resume.pdf" class="btn-outline" download><i class="fa-solid fa-download"></i> Download</a>
+          </div>
+        </div>
+        <div class="about-img">
+          <div class="about-img-frame">
+            <img src="./assets/aditya.jpeg" alt="Aditya Yadav" class="about-photo" />
+            <div class="about-img-border"></div>
+          </div>
+          <div class="dot-grid-about-right"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section id="testimonials">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span>testimonials</h2>
+      <p class="section-subtitle">What people say about my work</p>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card glass-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Aditya delivered an exceptional website that exceeded all our expectations. His
+            attention to detail and creative approach made our brand stand out online."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div>
+              <strong>Siddharth Kumar</strong>
+              <span>Hackathon Winner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Working with Aditya was a pleasure. He understood our vision perfectly and turned
+            it into a beautiful, functional website. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div>
+              <strong>Priya Patel</strong>
+              <span>Business Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="testimonial-text">"The portfolio site Aditya built for me was exactly what I needed — clean, modern,
+            and fast. His coding skills and design eye are top-notch."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div>
+              <strong>Amit Kumar</strong>
+              <span>Photographer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FUN FACTS / STATS SECTION ===== -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card glass-card">
+          <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+          <span class="stat-number" data-target="10">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-icon"><i class="fa-solid fa-calendar-days"></i></div>
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Years Coding</span>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-icon"><i class="fa-brands fa-github"></i></div>
+          <span class="stat-number" data-target="500">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">GitHub Commits</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTS SECTION ===== -->
+  <section id="contacts">
+    <div class="container">
+      <div class="dot-grid-contacts"></div>
+      <h2 class="section-title"><span class="hash">#</span>contact-me</h2>
+      <p class="section-subtitle">Let's work together</p>
+      <div class="contacts-content">
+        <div class="contacts-text">
+          <p>I'm interested in freelance opportunities. However,
+            if you have other request or question, don't
+            hesitate to contact me.</p>
+
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xyzgobdj" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" id="formName" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" id="formEmail" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="formMessage" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+        <div class="contacts-right">
+          <div class="contacts-box glass-card">
+            <h4>Message me here</h4>
+            <div class="contact-item">
+              <i class="fa-regular fa-envelope"></i>
+              <span>adityayadav08102005@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com/adityayadav08102005-netizen" target="_blank" style="color:inherit;text-decoration:none">github.com/adityayadav08102005</a>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/aditya-raj-724abb28a/" target="_blank" style="color:inherit;text-decoration:none">linkedin.com/in/aditya-raj</a>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.instagram.com/_aditya__yadav__?igsh=dmg0eGprenYyM2Mx" target="_blank" style="color:inherit;text-decoration:none">@_aditya__yadav__</a>
+            </div>
+          </div>
+
+          <div class="contacts-availability glass-card">
+            <span class="availability-dot"></span>
+            <span>Available for internship opportunities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <a href="#home" class="nav-logo footer-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          Aditya Raj
+        </a>
+        <p class="footer-tagline">Crafting digital experiences that matter.</p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-media-label">Follow Me</p>
+        <div class="footer-icons">
+          <a href="https://github.com/adityayadav08102005-netizen" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/_aditya__yadav__?igsh=dmg0eGprenYyM2Mx" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/aditya-raj-724abb28a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>© 2026 Aditya Raj. All rights reserved. Built with <span class="purple">♥</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== RESUME MODAL ===== -->
+  <div class="resume-modal-overlay" id="resumeModal">
+    <div class="resume-modal">
+      <div class="resume-modal-header">
+        <div class="resume-modal-title">
+          <i class="fa-solid fa-file-lines"></i>
+          <h3>My Resume</h3>
+        </div>
+        <div class="resume-modal-actions">
+          <a href="./assets/Aditya_Resume.pdf" download class="resume-download-btn">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+          <button class="resume-close-btn" onclick="closeResumeModal()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="resume-modal-body">
+        <div class="resume-html-content" id="resumeContent">
+
+          <!-- Resume Header -->
+          <div class="resume-hero">
+            <h2 class="resume-name">Aditya Raj</h2>
+            <div class="resume-contact-row">
+              <span><i class="fa-regular fa-envelope"></i> adityayadav08102005@gmail.com</span>
+              <span><i class="fa-solid fa-location-dot"></i> Virar, Maharashtra</span>
+            </div>
+          </div>
+
+          <!-- Objective -->
+          <div class="resume-section">
+            <h4 class="resume-section-title"><i class="fa-solid fa-bullseye"></i> Objective</h4>
+            <p>Artificial Intelligence student at Ajeenkya DY Patil University with a strong foundation in programming, data structures, and intelligent systems. Passionate about building real-world AI-driven solutions and scalable applications. Seeking an entry-level or internship opportunity to apply machine learning, software development, and problem-solving skills in a dynamic and growth-oriented environment.</p>
+          </div>
+
+          <!-- Education -->
+          <div class="resume-section">
+            <h4 class="resume-section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+            <div class="resume-edu-list">
+              <div class="resume-edu-item">
+                <div class="resume-edu-dot"></div>
+                <div>
+                  <strong>B.Tech in Artificial Intelligence</strong>
+                  <span class="resume-edu-school">Ajeenkya DY Patil University</span>
+                  <span class="resume-edu-date">Present</span>
+                </div>
+              </div>
+              <div class="resume-edu-item">
+                <div class="resume-edu-dot"></div>
+                <div>
+                  <strong>Diploma (Engineering)</strong>
+                  <span class="resume-edu-school">ISBM University</span>
+                  <span class="resume-edu-date">Completed</span>
+                </div>
+              </div>
+              <div class="resume-edu-item">
+                <div class="resume-edu-dot"></div>
+                <div>
+                  <strong>Class 12 — BSEB</strong>
+                  <span class="resume-edu-school">Bihar Board</span>
+                  <span class="resume-edu-date">Completed</span>
+                </div>
+              </div>
+              <div class="resume-edu-item">
+                <div class="resume-edu-dot"></div>
+                <div>
+                  <strong>Class 10 — CBSE</strong>
+                  <span class="resume-edu-school">Shiv Jyoti</span>
+                  <span class="resume-edu-date">Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects -->
+          <div class="resume-section">
+            <h4 class="resume-section-title"><i class="fa-solid fa-diagram-project"></i> Projects</h4>
+
+            <div class="resume-project">
+              <h5>Automatic Room Light Controller <span class="resume-project-tag">IoT / Embedded</span></h5>
+              <ul>
+                <li>Built automated lighting system with Arduino Uno + PIR motion sensor + Relay module</li>
+                <li>Implemented motion detection → auto ON/OFF with configurable delay timer</li>
+                <li>Achieved energy efficiency by eliminating unnecessary electricity consumption</li>
+                <li>Applied embedded programming concepts with real hardware integration</li>
+              </ul>
+              <div class="resume-tech-row">
+                <span>Arduino Uno</span><span>Embedded C</span><span>PIR Sensor</span><span>Relay Module</span><span>IoT</span>
+              </div>
+            </div>
+
+            <div class="resume-project">
+              <h5>Smart Parking System <span class="resume-project-tag">IoT + AI (INGENIUM)</span></h5>
+              <ul>
+                <li>Designed IoT + AI-based smart parking with real-time slot detection using YOLOv8</li>
+                <li>Built Python backend with ESP32/Raspberry Pi sensors and AWS Cloud IoT Core</li>
+                <li>Implemented predictive reservations, dynamic pricing, and GPS navigation</li>
+                <li>Flutter mobile app with MQTT protocol for real-time parking updates</li>
+                <li>Team project — collaborated with 4 members on hardware + software integration</li>
+              </ul>
+              <div class="resume-tech-row">
+                <span>Python</span><span>YOLOv8</span><span>ESP32</span><span>AWS IoT</span><span>Flutter</span><span>MQTT</span>
+              </div>
+            </div>
+
+            <div class="resume-project">
+              <h5>Omnifood Website <span class="resume-project-tag">Frontend</span></h5>
+              <ul>
+                <li>Developed a fully responsive food ordering website using HTML, CSS, and JavaScript</li>
+                <li>Implemented modern UI/UX practices including responsive design and animations</li>
+                <li>Optimized performance across multiple devices and screen sizes</li>
+              </ul>
+              <div class="resume-tech-row">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <a href="https://omnifood-seven-chi.vercel.app" target="_blank" class="resume-project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="resume-section">
+            <h4 class="resume-section-title"><i class="fa-solid fa-code"></i> Technical Skills</h4>
+            <div class="resume-skills-grid">
+              <div class="resume-skill-group">
+                <h6>Languages</h6>
+                <div class="resume-tech-row"><span>C</span><span>C++</span><span>Java</span><span>Python</span></div>
+              </div>
+              <div class="resume-skill-group">
+                <h6>Core Concepts</h6>
+                <div class="resume-tech-row"><span>Data Structures</span><span>OOP</span><span>Algorithms</span></div>
+              </div>
+              <div class="resume-skill-group">
+                <h6>Web Development</h6>
+                <div class="resume-tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              </div>
+              <div class="resume-skill-group">
+                <h6>Databases</h6>
+                <div class="resume-tech-row"><span>MySQL</span><span>MongoDB</span></div>
+              </div>
+              <div class="resume-skill-group">
+                <h6>Tools</h6>
+                <div class="resume-tech-row"><span>Git</span><span>GitHub</span><span>VS Code</span><span>MS Excel</span></div>
+              </div>
+              <div class="resume-skill-group">
+                <h6>Emerging Areas</h6>
+                <div class="resume-tech-row"><span>Artificial Intelligence</span><span>Machine Learning</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications & Achievements -->
+          <div class="resume-section resume-two-col">
+            <div>
+              <h4 class="resume-section-title"><i class="fa-solid fa-certificate"></i> Certifications</h4>
+              <p class="resume-highlight"><i class="fa-solid fa-award"></i> NPTEL Certification in relevant technical domain</p>
+            </div>
+            <div>
+              <h4 class="resume-section-title"><i class="fa-solid fa-trophy"></i> Achievements</h4>
+              <p class="resume-highlight"><i class="fa-solid fa-indian-rupee-sign"></i> Awarded ₹75,000 scholarship for academic excellence</p>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="resume-section">
+            <h4 class="resume-section-title"><i class="fa-solid fa-users"></i> Soft Skills</h4>
+            <div class="resume-tech-row resume-soft-skills">
+              <span>Problem Solving</span>
+              <span>Analytical Thinking</span>
+              <span>Effective Communication</span>
+              <span>Team Collaboration</span>
+              <span>Adaptability</span>
+              <span>Quick Learning</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BACK TO TOP BUTTON ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
